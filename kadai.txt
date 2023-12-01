@@ -1,0 +1,37 @@
+(base) yasufumimisono@Yasufumis-MacBook-Pro desktop % mkdir git_challenge
+(base) yasufumimisono@Yasufumis-MacBook-Pro desktop % cd git_challenge
+(base) yasufumimisono@Yasufumis-MacBook-Pro git_challenge % git init
+Initialized empty Git repository in /Users/yasufumimisono/Desktop/git_challenge/.git/
+(base) yasufumimisono@Yasufumis-MacBook-Pro git_challenge % git add hello_world.txt
+(base) yasufumimisono@Yasufumis-MacBook-Pro git_challenge % git commit -m "hello_world.txtを追加"
+[master (root-commit) c8eae91] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+(base) yasufumimisono@Yasufumis-MacBook-Pro git_challenge % git add .
+(base) yasufumimisono@Yasufumis-MacBook-Pro git_challenge % git commit -m "日本語訳を追記"  
+[master 1089279] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+(base) yasufumimisono@Yasufumis-MacBook-Pro git_challenge % git log
+commit 108927954bc9efc5c4d39e1f6c194ea854df8f42 (HEAD -> master)
+Author: surfbroYasu <yasufumimisono@gmail.com>
+Date:   Wed Nov 29 23:56:03 2023 +0900
+
+    日本語訳を追記
+
+commit c8eae916b1f501a12417bd4e65e5ab790735aae3
+Author: surfbroYasu <yasufumimisono@gmail.com>
+Date:   Wed Nov 29 23:54:17 2023 +0900
+
+    hello_world.txtを追加
+(base) yasufumimisono@Yasufumis-MacBook-Pro git_challenge % git push -u https://github.com/surfbroYasu/git-basic-kadai.git master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 553 bytes | 553.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/surfbroYasu/git-basic-kadai.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'https://github.com/surfbroYasu/git-basic-kadai.git/master'.
+(base) yasufumimisono@Yasufumis-MacBook-Pro git_challenge % 
